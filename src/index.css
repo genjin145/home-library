@@ -122,6 +122,7 @@ body {
 .book {
   padding: 20px 10px;
   transition: box-shadow 0.2s;
+  overflow: hidden;
 }
 
 .book:hover {
@@ -156,7 +157,7 @@ body {
 
 .books-list {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
 }
 
