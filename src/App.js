@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Drawer from './components/Drawer';
-import BookAdd from './components/BookUpdate';
+import BookUpdate from './components/BookUpdate';
 import BooksList from './components/BooksList';
 
 function App() {
@@ -77,7 +77,7 @@ function App() {
       </main>
 
       <Drawer isOpen={added} close={() => setAdded(false)}>
-        <BookAdd
+        <BookUpdate
           {...currentBook}
           addBook={addBook}
           editBook={editBook}

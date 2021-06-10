@@ -137,6 +137,14 @@ body {
   border-bottom: 1px solid rgba(60, 100, 177, 0.2);
 }
 
+.book__title {
+  word-wrap: break-word;
+}
+
+.book__author {
+  word-wrap: break-word;
+}
+
 .book__image {
   margin: auto;
   object-fit: cover;
@@ -148,7 +156,7 @@ body {
 
 .books-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 20%);
   gap: 30px;
 }
 
