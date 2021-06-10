@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  color: #373f41;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-primary {
+  padding: 12px 18px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #3c64b1;
+  border: none;
+  cursor: pointer;
+}
+
+.button-secondary {
+  padding: 10px 16px;
+  color: #373f41;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #e2e5e6;
+  cursor: pointer;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.input {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  border: 1px solid #737b7d;
+}
+
+.image-loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  height: 400px;
+  border-bottom: 1px solid rgba(60, 100, 177, 0.2);
+  cursor: pointer;
+}
+
+.image-loader__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.image-loader__info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.image-loader__input {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.page-title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.drawer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  z-index: 100;
+}
+
+.drawer__overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.drawer__box {
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.book-add {
+  display: grid;
+  gap: 40px;
+}
+
+.book-add__buttons {
+  display: grid;
+  gap: 20px;
+}
+
+.header {
+  padding: 30px 0;
+  background-color: rgba(60, 100, 177, 0.2);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book {
+  padding: 20px 10px;
+  transition: box-shadow 0.2s;
+}
+
+.book:hover {
+  box-shadow: 5px 5px 10px 10px rgba(60, 100, 177, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book__header {
+  display: flex;
+  height: 205px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(60, 100, 177, 0.2);
+}
+
+.book__image {
+  margin: auto;
+  object-fit: cover;
+}
+
+.book__author {
+  margin-bottom: 0;
+}
+
+.books-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  color: #c3cbcd;
+}
+
+.empty__smile {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
